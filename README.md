@@ -1,6 +1,6 @@
-# The Drummond Lab main website
+# The Bard Lab main website
 
-Our website, http://drummondlab.org, is a [GitHub Pages](https://pages.github.com/) site built with [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getboostrap.com), originally pulled from [Trevor Bedford's site](http://bedford.io) and heavily modified.
+Our website, http://bardlab.org, is a [GitHub Pages](https://pages.github.com/) site built with [Jekyll](https://jekyllrb.com/) and [Bootstrap](http://getboostrap.com), originally pulled from [Trevor Bedford's site](http://bedford.io) and heavily modified.
 
 # Editing the site
 
@@ -8,7 +8,7 @@ Here's a step-by-step guide to making modifications to the site, focused initial
 
 ## Clone the repository
 
-If you're a member of the [Drummond Lab team](https://github.com/orgs/drummondlab/teams/drummond-lab-team), you have access to the website repository.
+If you're a member of the [Bard Lab team](https://github.com/orgs/bardlab/teams/drummond-lab-team), you have access to the website repository.
 
 To clone the repository, making a local copy on your machine:
 
