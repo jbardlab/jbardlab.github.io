@@ -1,6 +1,13 @@
 name: Bard Lab
 description: Post-transcriptional regulation of gene expression during cellular stress, viral infection and cancer.
 url: https://bardlab.org
+department:
+  name: "Department of Biology"
+  url: "https://www.bio.tamu.edu/"
+
+institution:
+  name: "Texas A&M University"
+  url: "https://www.tamu.edu"
 
 markdown: kramdown
 permalink: /:categories/:title/
