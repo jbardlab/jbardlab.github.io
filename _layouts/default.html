@@ -13,9 +13,10 @@
   <link href="/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/favicon.png"/>
+	<link rel="shortcut icon" href="/images/logos/Maroon_B_favicon_cropped.webp"/>
 
 	<!-- Typekit -->
+	<!-- TODO (JB 230113): Update to Google Font Open Sans -->
 	<script>
 	  (function(d) {
 		var config = {
@@ -33,7 +34,7 @@
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('create', 'UA-26244371-2', 'bardlab.org');
 		ga('send', 'pageview');
 
 	</script>
@@ -51,34 +52,23 @@
 	<div id="header">
 		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
 			<div class="container">
+				<!-- Don't need title on the navbar on the home page, there is a big title there-->
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/">
-					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
-					bedford lab
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logos/Maroon_B_favicon_cropped.webp">
+					Bard Lab
 				</a>
 				{% else %}
 				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logos/Maroon_B_favicon_cropped.webp">
 				</a>
 				{% endif %}
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav nav-pills ml-auto">
-						{% if page.categories.first == 'blog' %}
-						<li class="nav-link active">
-						{% else %}
-						<li class="nav-link">
-						{% endif %}
-						<a class="mx-1" href="/blog/">blog</a>
-						</li>
-						{% if page.categories.first == 'papers' %}
-						<li class="nav-link active">
-						{% else %}
-						<li class="nav-link">
-						{% endif %}
-						<a class="mx-1" href="/papers/">papers</a>
-						</li>
 						{% if page.categories.first == 'projects' %}
 						<li class="nav-link active">
 						{% else %}
@@ -91,19 +81,61 @@
 						<li class="nav-link">
 						{% endif %}
 						<a class="mx-1" href="/team/">team</a></li>
+						{% if page.categories.first == 'papers' %}
+						<li class="nav-link active">
+						{% else %}
+						<li class="nav-link">
+						{% endif %}
+						<a class="mx-1" href="/papers/">papers</a></li>
+						{% if page.categories.first == 'news' %}
+						<li class="nav-link active">
+						{% else %}
+						<li class="nav-link">
+						{% endif %}
+						<a class="mx-1" href="/news/">news</a>
+						{% if page.categories.first == 'blog' %}
+						<li class="nav-link active">
+						{% else %}
+						<li class="nav-link">
+						{% endif %}
+						<a class="mx-1" href="/blog/">blog</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
 
-	<div class="container mt-4">
+	<div class="container mt-4 mb-5">
 
 	{{ content }}
 
 	</div>
 
-	<div id="footer"><span style="display:none">foo</span></div>
+
+	<!-- Static bottom navbar -->
+	<!-- (JB 230113) Updated to bootstrap 4.6-->
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+		<div class="container">
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#jb-bottom-collapse" aria-controls="jb-bottom-collapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="jb-bottom-collapse">
+				<ul class="navbar-nav mr-auto small">
+					<li class="nav-item"><a class="nav-link" href="{{ site.department.url }}">{{ site.department.name }}</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{ site.institution.url }}">{{ site.institution.name }}</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<!-- About page is found in the misc category-->
+					<li class="nav-item"><a class="nav-link" href='/misc/About/#purpose'>About</a></li>
+					<li class="nav-item"><a class="nav-link" href='/misc/About/#join'>Join</a></li>
+					<li class="nav-item"><a class="nav-link" href='/misc/About/#contact'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 
 </body>
 </html>

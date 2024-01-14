@@ -1,14 +1,14 @@
-# bedford lab research
+# Bard Lab research
 
 ## Build site
 
 To build the website locally, clone the repo with:
 
 ```
-git clone https://github.com/blab/blotter.git
+git clone git@github.com:jbardlab/jbardlab.github.io.git
 ```
 
-Then install necessary Ruby dependencies by running `bundle install` from within the `blotter` directory.  After this, the site can be be built with:
+Then install necessary Ruby dependencies by running `bundle install` from within the `jbardlab.github.io` directory.  After this, the site can be be built with:
 
 ```
 bundle exec jekyll build
@@ -18,13 +18,6 @@ bundle exec jekyll build
 
 To view the site, run `bundle exec jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
 
-To include projects, preprocessing scripts are necessary to clone project repos and update Jekyll metadata. This can be accomplished with:
-
-```
-ruby _scripts/update-and-preprocess.rb
-```
-
-Then `jekyll build` works as normal.
 
 ## Contribute
 
@@ -44,16 +37,16 @@ The `layout`, `title` and `author` tags are required, while `link` and `image` a
 
 ## For more information
 
-* Look over the [metadata format guide](http://bedford.io/guide/format/)
-* Look over the [Markdown style guide](http://bedford.io/guide/style/)
+* Look over the [metadata format guide](http://bardlab.org/guide/format/)
+* Look over the [Markdown style guide](http://bardlab.org/guide/style/)
 
 ## License
 
-All source code in this repository, consisting of files with extensions `.html`, `.css`, `.less`, `.rb` or `.js`, is freely available under an MIT license, unless otherwise noted within a file. You're welcome to borrow / repurpose code to build your own site, but I would very much appreciate attribution and a link back to [bedford.io](http://bedford.io) from your `about` page.
+All source code in this repository, consisting of files with extensions `.html`, `.css`, `.less`, `.rb` or `.js`, is freely available under an MIT license, unless otherwise noted within a file. You're welcome to borrow / repurpose code to build your own site, but I reccomend an  attribution and a link back to [bedford.io](http://bedford.io) from your `about` page.
 
 **The MIT License (MIT)**
 
-Copyright (c) 2013-2019 Trevor Bedford
+Copyright (c) 2024- Jared Bard
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
