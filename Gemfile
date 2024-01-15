@@ -22,3 +22,6 @@ gem 'webrick'
 
 # gzipping assets
 gem 'jekyll-gzip'
+
+# required by github pages
+gem 'faraday-retry'

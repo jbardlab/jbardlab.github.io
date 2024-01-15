@@ -33,9 +33,14 @@
   // Ensures the caption's text aligns with the image.
   display: inline-block;
 }
-
+/* this is i think built for the wrong version of sass (a newer one, dart sass) -->
 .figure-img {
   margin-bottom: math.div($spacer, 2);
+  line-height: 1;
+}
+*/
+.figure-img {
+  margin-bottom: $spacer /  2;
   line-height: 1;
 }
 
