@@ -8,6 +8,8 @@ To build the website locally, clone the repo with:
 git clone git@github.com:jbardlab/jbardlab.github.io.git
 ```
 
+Make sure ruby is [installed](https://www.ruby-lang.org/en/documentation/installation/).
+
 Then install necessary Ruby dependencies by running `bundle install` from within the `jbardlab.github.io` directory.  After this, the site can be be built with:
 
 ```
@@ -26,14 +28,13 @@ Blog posts just require YAML top matter that looks something like:
 ```
 ---
 layout: post
-title: Newton Institute presentation
-author: Trevor Bedford
-link: http://www.newton.ac.uk/programmes/IDD/seminars/2013082213301.html
-image: /images/blog/transmission.png
+title: Stress granule presentation
+author: Jared Bard
+image: /images/blog/test.png
 ---
 ```
 
-The `layout`, `title` and `author` tags are required, while `link` and `image` are optional.  Just save a Markdown file with this top matter as something like `blog/_posts/2013-08-27-newton-institute.md`, where `2013-08-27` is the date of the post and `newton-institute` is the short title.  This short title is used in the URL of the post, so this becomes `blog/newton-institute/`, so the short title should be long enough and unique enough not to cause conflicts with other posts.
+The `layout`, `title` and `author` tags are required, while `image` etc. is optional.  Just save a Markdown file with this top matter as something like `blog/_posts/2024-01-13-welcome.md`, where `2024-01-13` is the date of the post and `welcome` is the short title.  This short title is used in the URL of the post, so this becomes `blog/welcome/`, so the short title should be long enough and unique enough not to cause conflicts with other posts.
 
 ## For more information
 
