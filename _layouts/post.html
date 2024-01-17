@@ -62,10 +62,10 @@ layout: default
 			{% if page.image %}
 			{% if page.link %}
 			<a href="{{ page.link }}">
-				<img class="offset" src="{{ page.image }}">
+				<img class="offset" src="{{ page.image }}" alt="{{ page.title }}">
 			</a>
 			{% else %}
-			<img class="offset" src="{{ page.image }}">
+			<img class="offset" src="{{ page.image }}" alt="{{ page.title }}">
 			{% endif %}
 			{% endif %}
 			<div class="post">
