@@ -1,5 +1,6 @@
 $primary: #DD2D2D;
 $gray: #555;
+$aggie-maroon: #500000;
 $gray-light: #777;
 $line-height-base: 1.6;
 $font-size-base: 0.875rem;
@@ -123,7 +124,7 @@ b, strong {
 }
 
 .nav-brand a {
-  color: $gray;
+  color: $aggie-maroon;
 }
 
 .nav-brand a:hover {
@@ -132,7 +133,7 @@ b, strong {
 }
 
 .nav-link a {
-  color: $gray;
+  color: $aggie-maroon;
 }
 
 .nav-link a:hover {
@@ -143,6 +144,16 @@ b, strong {
 .navbar-toggler {
   margin-top: 14px;
   margin-bottom: 14px;
+}
+
+/* use aggie maroon for links in navbar */
+.navbar-light .navbar-nav .nav-link {
+    color: $aggie-maroon;
+}
+
+/* use aggie maroon for links in navbar */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $primary;
 }
 
 /* headings */
@@ -406,4 +417,5 @@ blockquote {
 	font-size: 6rem;
 	font-weight: 300;
 	line-height: 1.2;
+	color: #500000
 }

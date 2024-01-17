@@ -90,10 +90,10 @@ category: blog
 				{% if post.image %}
 				{% if post.link %}
 				<a href="{{ post.link }}">
-					<img class="offset" src="{{ post.image }}">
+					<img class="offset" src="{{ post.image }}" alt="{{ post.title }}">
 				</a>
 				{% else %}
-				<img class="offset" src="{{ post.image }}">
+				<img class="offset" src="{{ post.image }}" alt="{{ post.title }}">
 				{% endif %}
 				{% endif %}
 				<div class="post">
