@@ -2,29 +2,18 @@
 layout: paper
 title: "Chaperones directly and efficiently disperse stress-triggered biomolecular condensates"
 year: "2022"
-shortref: "Yoo <i>et al.</i> 2022 Mol Cell"
-nickname: "chaperones-disperse"
+shortref: "Yoo <i>et al.</i> Mol Cell (2022)"
 journal: "Molecular Cell"
-volume: 82
-issue: 4
-pages: 741–755
 authors: "Yoo H, Bard JAM, Pilipenko E, Drummond DA"
 image: /images/papers/pab-chaperones.svg
-redirect_from: 
 fulltext: https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00005-3
 pdflink: /pdfs/yoo-chaperones-mol-cell-2022.pdf
 github: https://github.com/drummondlab/sim_disagg_2021
 pmid: 35148816
-pmcid: PMC8857057
-f1000: 
 doi: "10.1016/j.molcel.2022.01.005"
 dryad_doi: 
-figshare_doi: 
 category: paper
-# Note: 'published' is a Jekyll keyword and does not refer to whether the paper is published, but rather to whether this Markdown should be part of the rendered site.
-skip: false
 preprint: false
-embargo: false	
 peerreview: true
 review: false
 tags: [chaperones, heat shock, stress, condensation]

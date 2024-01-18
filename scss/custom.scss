@@ -420,3 +420,9 @@ blockquote {
 	line-height: 1.2;
 	color: #500000
 }
+
+/* change color of navbar focus */
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:focus {
+	color: #555;
+}
+
