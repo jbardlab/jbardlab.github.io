@@ -2,30 +2,18 @@
 layout: paper
 title: "An adaptive biomolecular condensation response is conserved across environmentally divergent species"
 year: "2023"
-shortref: "Keyport Kik et al. 2023"
-nickname: "conserved-condensation"
+shortref: "Keyport Kik <i>et al.</i>, bioRxiv (2023)"
 journal: "bioRxiv"
-volume: 
-issue: 
-pages: 
 authors: "Keyport Kik S, Christopher D,  Glauninger H, Wong Hickernell C, Bard JAM, Ford M, Sosnick TR, Drummond DA"
-image: /images/papers/default-paper.svg
-redirect_from: 
+image: /images/papers/Keyport-kik-2023.png
 fulltext: https://www.biorxiv.org/content/10.1101/2023.07.28.551061v1
 pdflink: https://www.biorxiv.org/content/10.1101/2023.07.28.551061v1.full.pdf
 github: https://github.com/skeyport/conservation-of-condensation-2023
 pmid: 
-pmcid: 
-f1000: 
 doi: "10.1101/2023.07.28.551061"
 dryad_doi: "10.5061/dryad.w3r2280w6"
-figshare_doi: 
-altmetric_id: 152138863
 category: paper
-# Note: 'published' is a Jekyll keyword and does not refer to whether the paper is published, but rather to whether this Markdown should be part of the rendered site.
-skip: false
 preprint: true
-embargo: false	
 peerreview: false
 review: false
 tags: [evolution, biomolecular condensation, phase separation, yeast, heat shock, HSR, chaperones, heat shock response]

@@ -2,7 +2,7 @@
 layout: paper
 title: "Chaperones directly and efficiently disperse stress-triggered biomolecular condensates"
 year: "2022"
-shortref: "Yoo <i>et al.</i> Mol Cell (2022)"
+shortref: "Yoo <i>et al.</i>, Mol Cell (2022)"
 journal: "Molecular Cell"
 authors: "Yoo H, Bard JAM, Pilipenko E, Drummond DA"
 image: /images/papers/pab-chaperones.svg

@@ -2,30 +2,18 @@
 layout: paper
 title: "Stressful steps: Progress and challenges in understanding stress-induced mRNA condensation and accumulation in stress granules"
 year: "2022"
-shortref: "Glauninger <i>et al.</i> 2022"
-nickname: "stressful-steps"
+shortref: "Glauninger <i>et al.</i>, Mol Cell (2022)"
 journal: "Molecular Cell"
-volume: 82
-issue: 14
-pages: 2544–2556 
 authors: "Glauninger HG, Hickernell CJW, Bard JAM, Drummond DA"
 image: /images/papers/stressful-steps-thumbnail.svg
-redirect_from: 
 fulltext: https://authors.elsevier.com/a/1fBEa3vVUPK85G
 pdflink: /pdfs/glauninger-etal-stressful-steps-2022.pdf
 github: 
 pmid: 35662398
-pmcid: PMC9308734
-f1000: 
 doi: "10.1016/j.molcel.2022.05.014"
 dryad_doi: 
-figshare_doi: 
-altmetric_id: 129235912
 category: paper
-# Note: 'published' is a Jekyll keyword and does not refer to whether the paper is published, but rather to whether this Markdown should be part of the rendered site.
-skip: false
 preprint: false
-embargo: false	
 peerreview: true
 review: true
 tags: [stress granules, biomolecular condensation, condensates, RNA]

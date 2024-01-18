@@ -2,30 +2,18 @@
 layout: paper
 title: "Adaptive preservation of orphan ribosomal proteins in chaperone-stirred condensates"
 year: "2023"
-shortref: "Ali <i>et al.</i> 2023"
-nickname: "orp-condensates"
+shortref: "Ali <i>et al.</i>, Nat Cell Bio (2023)"
 journal: "Nature Cell Biology"
-volume: 
-issue: 
-pages: 
 authors: "Ali A, Garde R, Schaffer OC, Bard JAM, Husain K, Keyport Kik S, Davis KA, Luengo-Woods S, Drummond DA, Squires AH, Pincus D"
-image: /images/papers/default-paper.svg
-redirect_from: 
+image: /images/papers/Ali_2023.png
 fulltext: https://www.nature.com/articles/s41556-023-01253-2
 pdflink: /pdfs/ali-etal-orps-ncb-2023.pdf
 github: 
-pmid: 
-pmcid: 
-f1000: 
+pmid: 37845327
 doi: "10.1038/s41556-023-01253-2"
 dryad_doi: 
-figshare_doi: 
-altmetric_id: 155437607
 category: paper
-# Note: 'published' is a Jekyll keyword and does not refer to whether the paper is published, but rather to whether this Markdown should be part of the rendered site.
-skip: false
 preprint: false
-embargo: false	
 peerreview: true
 review: false
 tags: [ribosomal proteins, biomolecular condensation, nucleolus, Sis1]
