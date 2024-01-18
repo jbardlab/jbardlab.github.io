@@ -2,7 +2,7 @@
 layout: paper
 title: "Structure and Function of the 26S Proteasome"
 year: "2018"
-shortref: "Bard<sup>*</sup>, Goodall<sup>*</sup>, <i>et al.</i> Annu Rev Biochem (2018)"
+shortref: "Bard<sup>*</sup>, Goodall<sup>*</sup>, <i>et al.</i>, Annu Rev Biochem (2018)"
 journal: "Annual Review of Biochemistry"
 authors: "Bard JAM<sup>*</sup>, Goodall EA<sup>*</sup>, Greene ER, Jonsson E, Dong KC, Martin A"
 image: /images/papers/Annual-Reviews-logo.svg
