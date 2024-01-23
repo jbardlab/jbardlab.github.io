@@ -29,13 +29,20 @@ categories:
 	<div class="col-lg-12">
 		<div class="smallhead">
 	<p>
-		The Bard Lab in the <a class="off" href="https://www.bio.tamu.edu/">Department of Biology at Texas A&M University</a>
-		studies the post-transcriptional regulation of gene expression during cellular stress, viral infection and in cancer.
+		The Bard Lab in the <a href="https://www.bio.tamu.edu/">Department of Biology</a> at Texas A&M University
+		studies the cellular response to stress, with a particular focus on stress-induced translational reprogramming 
+		and biomolecular condensation during viral infection and in cancer. We take an integrative approach to address these questions, 
+		combining biophysical, biochemical, and high-throughput tools to gain a 
+		deep understanding of molecular mechanisms and functions.
+	</p>
+	<p>
 		This website is still under construction, so stay tuned for more information!
 	</p>
 		</div>
 	</div>
 </div>
+
+
 <!-- now show news, papers and blog posts-->
 <div class="bigspacer"></div>
 <div class="bigspacer"></div>
@@ -43,13 +50,117 @@ categories:
 <div class="row">
 	<div class="col-lg-12">
 		<div class="head">
-			<a class="off" href="/blog/">Recent posts</a>
+			<a class="off" href="/blog/">Recent news</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
 </div>
 
 <div class="row">
+	{% for post in site.categories.news limit:4 %}
+
+	{% for member in site.categories.team %}
+		{% if member.title == post.author %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}
+
+	<div class="col-lg-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-comment-o fa-fw"></i>
+				<a class="off" href="{{ post.url }}">
+				{{ post.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ post.date | date: "%-d %b %Y" }}
+		{% if post.author %}
+		by <a class="off" href="
+		{% for member in site.categories.team %}
+			{% if member.title == post.author %}
+			{{ member.url }}
+			{% endif %}
+		{% endfor %}
+		">
+		{{ post.author }}
+		</a>
+		{% endif %}
+		{% if post.authors %}
+		by
+		<a class="off" href="
+		{% for member in site.categories.team %}
+			{% if member.title == post.authors.first %}
+			{{ member.url }}
+			{% endif %}
+		{% endfor %}
+		">
+		{{ post.authors.first }}
+		</a>
+		and
+		<a class="off" href="
+		{% for member in site.categories.team %}
+			{% if member.title == post.authors.last %}
+			{{ member.url }}
+			{% endif %}
+		{% endfor %}
+		">
+		{{ post.authors.last }}
+		</a>
+		{% endif %}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+  
+  <div class="row">
+	  <div class="col-lg-12">
+		  <div class="head">
+			  <a class="off" href="/papers/">Recent papers</a>
+		  </div>
+		  <div class="spacer"></div>
+	  </div>
+  </div>
+  
+  <div class="row">
+	  {% for paper in site.categories.papers limit:4 %}
+	  <div class="col-lg-3 reduced-gutter">
+		  <div class="pad-left">
+			  <div class="note">
+				  <i class="fa fa-file-text-o fa-fw"></i>
+				  <a class="off" href="{{ paper.url }}">
+				  {{ paper.title }}
+				  </a>
+			  </div>
+			  <div class="smallspacer"></div>
+			  <div class="smallnote">
+				  Posted
+				  {{ paper.date | date: "%-d %b %Y" }}
+			  </div>
+			  <div class="bigspacer"></div>
+		  </div>
+	  </div>
+	  {% endfor %}
+  </div>
+  
+  <div class="spacer"></div>
+
+  <div class="row">
+	<div class="col-lg-12">
+		<div class="head">
+			<a class="off" href="/blog/">Recent blog posts</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+	</div>
+
+  <div class="row">
 	{% for post in site.categories.blog limit:4 %}
 
 	{% for member in site.categories.team %}
@@ -109,78 +220,6 @@ categories:
 	</div>
 	{% endfor %}
 </div>
-  
-  <div class="spacer"></div>
-  
-  <div class="row">
-	  <div class="col-lg-12">
-		  <div class="head">
-			  <a class="off" href="/papers/">Recent papers</a>
-		  </div>
-		  <div class="spacer"></div>
-	  </div>
-  </div>
-  
-  <div class="row">
-	  {% for paper in site.categories.papers limit:4 %}
-	  <div class="col-lg-3 reduced-gutter">
-		  <div class="pad-left">
-			  <div class="note">
-				  <i class="fa fa-file-text-o fa-fw"></i>
-				  <a class="off" href="{{ paper.url }}">
-				  {{ paper.title }}
-				  </a>
-			  </div>
-			  <div class="smallspacer"></div>
-			  <div class="smallnote">
-				  Posted
-				  {{ paper.date | date: "%-d %b %Y" }}
-			  </div>
-			  <div class="bigspacer"></div>
-		  </div>
-	  </div>
-	  {% endfor %}
-  </div>
-  
-  <div class="spacer"></div>
-  
-  <div class="row">
-	  <div class="col-lg-12">
-		  <div class="head">
-			  <a class="off" href="/projects/">Active projects</a>
-		  </div>
-		  <div class="spacer"></div>
-	  </div>
-  </div>
-  
-  <div class="row">
-	  {% for project in site.data.projects limit:4 %}
-	  <div class="col-lg-3 reduced-gutter">
-		  <div class="pad-left">
-			  <div class="note">
-				  <i class="fa fa-edit fa-fw"></i>
-				  <a class="off" href="{{ project.url }}">
-				  {{ project.title }} - {{ project.description }}
-				  </a>
-			  </div>
-			  <div class="smallspacer"></div>
-			  <div class="smallnote">
-				  Updated
-				  <a class="off" href="{{ project.commits.first.url }}">
-				  {{ project.commits.first.date | date: "%-d %b %Y" }}
-				  </a>
-				  by
-				  <a class="off" href="{{ project.commits.first.author_url }}">
-				  {{ project.commits.first.author_login }}
-				  </a>
-			  </div>
-			  <div class="bigspacer"></div>
-		  </div>
-	  </div>
-	  {% endfor %}
-  </div>
-  
-  <div class="spacer"></div>
   
   
 <div class="row">
