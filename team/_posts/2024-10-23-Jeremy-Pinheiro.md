@@ -7,7 +7,7 @@ handle: Pinheiro
 email: jeremypinheiro@tamu.edu
 github: jeremypinheiro
 scholar: 
-image: 
+image: /images/team/Jeremy Picture.jpg
 cv: 
 alum: false
 ---
