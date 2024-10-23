@@ -12,7 +12,5 @@ cv:
 alum: false
 ---
 
-Bella is currently working towards her Bachelor's degree at Texas A&M University.
+Bella is a third year biology major currently working towards her Bachelor's degree at Texas A&M University.
 
-[1]:
-[2]:
