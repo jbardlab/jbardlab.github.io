@@ -7,7 +7,7 @@ handle:
 email: bella.freel@tamu.edu
 github: bella-freel
 scholar: 
-image: 
+image: /images/team/bfreelpic.JPG
 cv: 
 alum: false
 ---
