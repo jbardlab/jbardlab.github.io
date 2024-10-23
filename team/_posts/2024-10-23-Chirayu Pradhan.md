@@ -8,7 +8,7 @@ email: chirayu.pradhan@tamu.edu
 github: AndyPradAndy
 scholar: 
 image: /images/team/Chirayu-Pradhan.png
-cv: /pdfs/team/240113_Bard_CV.pdf
+cv: 
 alum: false
 ---
 
