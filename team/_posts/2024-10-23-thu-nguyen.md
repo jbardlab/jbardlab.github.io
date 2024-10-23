@@ -7,7 +7,7 @@ handle:
 email: thu.ntu@tamu.edu
 github: nguyenthaiuyenthu
 scholar: 
-image: images/team/ThuN.jpg
+image: /images/team/ThuN.jpg
 cv: 
 alum: false
 ---
