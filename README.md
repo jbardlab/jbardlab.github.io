@@ -2,24 +2,14 @@
 
 ## Build site
 
-To build the website locally, clone the repo with:
+To build the website locally, it is now recommended to use the included dockerfile.
 
-```
-git clone git@github.com:jbardlab/jbardlab.github.io.git
-```
-
-Make sure ruby is [installed](https://www.ruby-lang.org/en/documentation/installation/).
-
-Then install necessary Ruby dependencies by running `bundle install` from within the `jbardlab.github.io` directory.  After this, the site can be be built with:
-
-```
-bundle exec jekyll build
-```
-
-(If you are getting errors at this stage, it may be due to your version of `bundle`. Try `gem uninstall bundler` + `gem install bundler -v 1.13.1`.)
-
-To view the site, run `bundle exec jekyll serve` and point a browser to `http://localhost:4000/`.  More information on Jekyll can be found [here](http://jekyllrb.com/).
-
+1. Install Docker Desktop (https://www.docker.com/products/docker-desktop)
+2. cd to the root directory of the repository
+3. Run the following command in the terminal to build the docker container:
+```bash ./.docker/run.sh```
+4. Wait for docker to build the container and start the server.
+5. The website should be available to preview at http://localhost:4000
 
 ## Contribute
 
