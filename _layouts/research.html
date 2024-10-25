@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<!-- borrowed from premal shah (https://github.com/shahpr/shahlab/blob/master/_layouts/research.html) -->
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="{{ page.url }}" class="off">{{ page.title }}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			{% if page.image %}
+			<img width=500 class="offset" src="{{ page.image }}">
+			{% endif %}
+			<div class="post">
+				{{ content }}
+			</div>
+            
+        <div class="bigspacer"></div>
+		<div class="head">Publications</div>
+		<div class="spacer"></div>
+		{% for paper in site.categories.papers %}
+		{% if paper.tags contains research.tag %}
+		<p>{{ paper.title }}
+        <a href="{{ paper.url }}" class="note">{{ paper.ref }}</a>
+		{% endif %}
+		{% endfor %}
+
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>

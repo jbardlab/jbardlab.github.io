@@ -1,0 +1,57 @@
+<!-- code for navbar at the tob of the page-->
+<div id="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <!-- Don't need title on the navbar on the home page, there is a big title there-->
+            {% if page.categories.first != 'home' %}
+            <a class="navbar-brand" href="/">
+                <img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logos/B_nucleic.webp" alt="B icon">
+                Bard Lab
+            </a>
+            {% else %}
+            <a class="navbar-brand" href="/">
+                <img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logos/B_nucleic.webp" alt="B icon">
+            </a>
+            {% endif %}
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-pills ml-auto">
+                    {% if page.categories.first == 'research' %}
+                    <li class="nav-link active">
+                    {% else %}
+                    <li class="nav-link">
+                    {% endif %}
+                    <a class="mx-1" href="/research/">Research</a></li>
+                    {% if page.categories.first == 'team' %}
+                    <li class="nav-link active">
+                    {% else %}
+                    <li class="nav-link">
+                    {% endif %}
+                    <a class="mx-1" href="/team/">Team</a></li>
+                    {% if page.categories.first == 'papers' %}
+                    <li class="nav-link active">
+                    {% else %}
+                    <li class="nav-link">
+                    {% endif %}
+                    <a class="mx-1" href="/papers/">Papers</a></li>
+                    {% if page.categories.first == 'news' %}
+                    <li class="nav-link active">
+                    {% else %}
+                    <li class="nav-link">
+                    {% endif %}
+                    <a class="mx-1" href="/news/">News</a>
+                    {% if page.categories.first == 'blog' %}
+                    <li class="nav-link active">
+                    {% else %}
+                    <li class="nav-link">
+                    {% endif %}
+                    <a class="mx-1" href="/blog/">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

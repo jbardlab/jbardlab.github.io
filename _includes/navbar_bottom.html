@@ -1,0 +1,24 @@
+<!-- Static bottom navbar -->
+<!-- (JB 230113) Updated to bootstrap 4.6-->
+<!-- set to turn into a toggle if window is too small-->
+<div id="footer">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#jb-bottom-collapse" aria-controls="jb-bottom-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+            <ul class="navbar-nav mr-auto small">
+                <li class="nav-item"><a class="nav-link aggie-maroon" href="{{ site.department.url }}">{{ site.department.name }}</a></li>
+                <li class="nav-item"><a class="nav-link aggie-maroon" href="{{ site.institution.url }}">{{ site.institution.name }}</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <!-- About page is found in the misc category-->
+                <li class="nav-item"><a class="nav-link" href='/misc/about/#purpose'>About</a></li>
+                <li class="nav-item"><a class="nav-link aggie-maroon" href='/misc/about/#join'>Join</a></li>
+                <li class="nav-item"><a class="nav-link aggie-maroon" href='/misc/about/#contact'>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
