@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+			{% if page.image %}
+			{% if page.link %}
+			<a href="{{ page.link }}">
+				<img class="offset" src="{{ page.image }}" alt="{{ page.title }}">
+			</a>
+			{% else %}
+			<img class="offset" src="{{ page.image }}" alt="{{ page.title }}">
+			{% endif %}
+			{% endif %}
+			<div class="post">
+				{{ content }}
+			</div>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>
+
+</div>

@@ -16,7 +16,7 @@ categories:
 <div class="bigspacer"></div>
 
 {% for member in site.categories.team reversed %}
-	{% if member.alumni != true %}
+	{% if member.alum != true %}
     {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-lg-4 memberbox">
 			<div class="media">
@@ -47,7 +47,7 @@ categories:
 <div class="bigspacer"></div>
 
 {% for member in site.categories.team reversed %}
-	{% if member.alumni == true %}
+	{% if member.alum == true %}
     {% cycle 'add rows 2': '<div class="row">', '', '' %}
 		<div class="col-lg-4 memberbox">
 			<div class="media">
