@@ -4,7 +4,7 @@ title: Kexin Pang
 position: Graduate Student
 nickname: 
 handle:
-email: 
+email: pangkx@tamu.edu
 github: 
 scholar: 
 image: /images/team/Kexin_pang.jpg
