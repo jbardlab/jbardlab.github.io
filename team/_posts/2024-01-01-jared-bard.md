@@ -3,7 +3,7 @@ layout: member
 title: Jared Bard
 position: Principle Investigator
 nickname: Jared
-handle: jared
+handle: Jared Bard
 email: jbard@tamu.edu
 github: jabard89
 scholar: 
