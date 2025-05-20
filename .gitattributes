@@ -1,0 +1,13 @@
+# Force all text files to be stored with LF in the repo
+* tet=auto eol=lf
+
+# These stay exactly as‑is (images, archives, etc.)
+*.png  -text
+*.jpg  -text
+*.jpeg -text
+*.gif  -text
+*.svg  -text
+*.pdf  -text
+*.zip  -text
+*.woff -text
+*.woff2 -text
