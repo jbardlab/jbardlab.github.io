@@ -60,13 +60,6 @@ categories:
 
 <div class="row">
 	{% for post in site.categories.news limit:4 %}
-
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
-
 	<div class="col-lg-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
@@ -80,14 +73,15 @@ categories:
 				Posted
 				{{ post.date | date: "%-d %b %Y" }}
 		{% if post.author %}
-		by <a class="off" href="
-		{% for member in site.categories.team %}
-			{% if member.title == post.author %}
-			{{ member.url }}
+			{% assign author = nil %}
+			{% assign author = site.categories.team
+								| where: "title", post.author
+								| first %}
+			{% if author %}
+			by <a class="off" href="{{ author.url | strip | relative_url }}">
+				{{ author.title }}
+				</a>
 			{% endif %}
-		{% endfor %}
-		">
-		{{ post.author }}
 		</a>
 		{% endif %}
 		{% if post.authors %}
@@ -165,12 +159,6 @@ categories:
   <div class="row">
 	{% for post in site.categories.blog limit:4 %}
 
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
-
 	<div class="col-lg-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
@@ -184,14 +172,15 @@ categories:
 				Posted
 				{{ post.date | date: "%-d %b %Y" }}
 		{% if post.author %}
-		by <a class="off" href="
-		{% for member in site.categories.team %}
-			{% if member.title == post.author %}
-			{{ member.url }}
+			{% assign author = nil %}
+			{% assign author = site.categories.team
+								| where: "title", post.author
+								| first %}
+			{% if author %}
+			by <a class="off" href="{{ author.url | strip | relative_url }}">
+				{{ author.title }}
+				</a>
 			{% endif %}
-		{% endfor %}
-		">
-		{{ post.author }}
 		</a>
 		{% endif %}
 		{% if post.authors %}

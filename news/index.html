@@ -37,7 +37,7 @@ category: news
   
   <!-- Posts -->
   {% for post in site.categories.news %}
-  
+	{% assign author = nil %}
 	{% for member in site.categories.team %}
 	  {% if member.handle == post.author %}
 		{% assign author = member %}
