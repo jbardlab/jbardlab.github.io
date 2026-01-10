@@ -9,7 +9,7 @@ github: bella-freel
 scholar: 
 image: /images/team/bfreelpic.JPG
 cv: 
-alum: false
+alum: true
 type: Undergrad
 ---
 
