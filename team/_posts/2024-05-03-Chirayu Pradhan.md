@@ -9,7 +9,7 @@ github: AndyPradAndy
 scholar: 
 image: /images/team/Chirayu-Pradhan.png
 cv: 
-alum: false
+alum: true
 type: Undergrad
 ---
 

@@ -15,7 +15,8 @@ RUN VERSION=$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xargs); \
     bundle _${VERSION}_ install
 
 # install python
-RUN apt update && apt install -y python3.11 python3.11-venv python3-pip
+RUN apt update --allow-insecure-repositories --allow-unauthenticated && \
+    apt install -y --allow-unauthenticated python3.11 python3.11-venv python3-pip
 
 # create local python environment
 RUN python3 -m venv /opt/venv
