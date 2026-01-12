@@ -17,3 +17,4 @@ projects/
 .DS_Store
 .tweet-cache
 __pycache__/
+.cache/
