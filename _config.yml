@@ -14,10 +14,10 @@ permalink: /:categories/:title/
 future: true
 sass:
   sass_dir: scss
+  load_paths:
+    - assets/css
 
 plugins:
-  - jekyll-gzip
-  - jekyll-twitter-plugin
 
 gzip:
   replace_files: true

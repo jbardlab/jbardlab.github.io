@@ -26,6 +26,22 @@ docker build ${PLATFORM} \
     --file ./.docker/Dockerfile . && \
 
 # run built docker image
+# NOTE: On macOS (especially when the repo lives in a cloud-synced folder like SynologyDrive/iCloud),
+# writing Jekyll output into the bind-mounted `_site` directory can fail with Errno::EDEADLK.
+# By default, mount `_site` to a local temp directory on the host.
+SITE_OUTPUT_DIR=""
+if [[ $OSTYPE != msys* ]] && [[ $OSTYPE != cygwin* ]]; then
+    SITE_OUTPUT_DIR="${TMPDIR:-/tmp}/lab-website-renderer-_site"
+    mkdir -p "${SITE_OUTPUT_DIR}"
+fi
+
+DOCKER_VOLUMES=(
+    --volume "${WORKING_DIR}:/usr/src/app"
+)
+if [[ -n "${SITE_OUTPUT_DIR}" ]]; then
+    DOCKER_VOLUMES+=(--volume "${SITE_OUTPUT_DIR}:/usr/src/app/_site")
+fi
+
 ${DOCKER_RUN} ${PLATFORM} \
     --name ${CONTAINER} \
     --init \
@@ -34,5 +50,5 @@ ${DOCKER_RUN} ${PLATFORM} \
     --tty \
     --publish 4000:4000 \
     --publish 35729:35729 \
-    --volume "${WORKING_DIR}:/usr/src/app" \
+    "${DOCKER_VOLUMES[@]}" \
     ${IMAGE} "$@"
