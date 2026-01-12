@@ -16,5 +16,4 @@ projects/
 # Other files
 .DS_Store
 .tweet-cache
-
-*__pycache__*
+__pycache__/
