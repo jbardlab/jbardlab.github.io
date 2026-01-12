@@ -1,8 +1,11 @@
 source "https://rubygems.org"
 
 # jekyll
-gem "jekyll", "~> 4.3"
+gem "jekyll", "~> 3.10"
 gem "webrick", "~> 1.7"
+
+# kramdown (Jekyll 3 supports kramdown v2, but GFM parsing lives in a separate gem)
+gem "kramdown-parser-gfm"
 
 gem "html-proofer", "~> 5.0"
 
