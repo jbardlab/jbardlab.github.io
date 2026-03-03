@@ -7,7 +7,7 @@ handle: Jared Bard
 email: jbard@tamu.edu
 github: jabard89
 scholar: 
-image: /images/team/jared-bard.png
+image: /images/team/jared-bard.jpg
 cv: /pdfs/team/240113_Bard_CV.pdf
 alum: false
 type: Professor
