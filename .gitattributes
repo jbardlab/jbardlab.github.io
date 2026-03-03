@@ -11,3 +11,6 @@
 *.zip  -text
 *.woff -text
 *.woff2 -text
+*.eot  -text
+*.ttf  -text
+*.otf  -text
