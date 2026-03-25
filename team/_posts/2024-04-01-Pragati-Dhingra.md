@@ -7,7 +7,7 @@ LinkedIn: https://www.linkedin.com/in/pragati-dhingra/
 email: pragatidhingra@tamu.edu
 github: dhingrapragati
 scholar: 
-image: /images/team/PragatiDhingra_IMG.jpg
+image: /images/team/PragatiDhingra_IMG.jpeg
 cv: /pdfs/team/CV_PragatiDhingra.pdf
 alum: false
 type: PhD
